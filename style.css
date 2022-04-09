@@ -20,7 +20,9 @@ html {
   margin: 2rem auto; */
   line-height: var(--lh);
 }
-
+.small_text {
+  font-size: 12px;
+}
 .truncate-overflow {
   --max-lines: 3;
   position: relative;

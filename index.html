@@ -179,7 +179,7 @@
             let truncateOverflow = numOfPosts <= 25 ? "truncate-overflow" : '';
             // console.log(numOfPosts, "-->", unitChange + "rem");
             console.log(Math.round(numOfPosts / 2));
-            if (numOfPosts >=8) {
+            if (numOfPosts >= 8) {
                 sdgContainer.innerHTML += `
                 <div class="box box_${numOfPosts}" id="boxId_${numOfPosts}" 
                                             style="
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                     <div class="header">
-                        <p class="num">${codeNumber}</p>
+                        <p class="num">${codeNumber}<small class="small_text">(${numOfPosts})</small></p>
                         <p class="name">${name}</p>
                     </div>
                     <div class="body">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                     <div class="header">
-                        <p class="num">${codeNumber}</p>
+                        <p class="num">${codeNumber}<small class="small_text">(${numOfPosts})</small></p>
                         <p class="name">${name}</p>
                     </div>
                     <div class="body">
