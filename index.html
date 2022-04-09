@@ -118,35 +118,67 @@
 
             let truncateOverflow = numOfPosts <= 25 ? "truncate-overflow" : '';
             // console.log(numOfPosts, "-->", unitChange + "rem");
-
-            sdgContainer.innerHTML += `
-            <div class="box box_${numOfPosts}" id="boxId_${numOfPosts}" 
-                                        style="
-                                        width:${unitChange + 5}rem;
-                                        // height:${unitChange}rem;
-                                        flex:${unitChange}rem;
-                                        background-color: ${colorCode}">
-                <div class="overlay" style="background-color: ${colorCode}">
-                  <div class="text_box">
-                    <p class=${truncateOverflow}>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam
-                        </p>
-                    <button class="cta_btn">
-                        our contribution <i class="fa-solid fa-angle-right cta_btn_icon"></i>
-                        </button>
+            console.log(Math.round(sdgArr2Sorted.length / 2));
+            if (numOfPosts > Math.round(sdgArr2Sorted.length / 2)) {
+                sdgContainer.innerHTML += `
+                <div class="box box_${numOfPosts}" id="boxId_${numOfPosts}" 
+                                            style="
+                                            width:${unitChange}rem;
+                                            height: auto;
+                                            min-height:${unitChange - 5}rem;
+                                            flex: 1 0 auto;
+                                            background-color: ${colorCode}">
+                    <div class="overlay" style="background-color: ${colorCode}">
+                      <div class="text_box">
+                        <p class=${truncateOverflow}>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam
+                            </p>
+                        <button class="cta_btn">
+                            our contribution <i class="fa-solid fa-angle-right cta_btn_icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <p class="num">${numOfPosts}</p>
+                        <p class="name">${name}</p>
+                    </div>
+                    <div class="body">
+                        <div class="icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="header">
-                    <p class="num">${numOfPosts}</p>
-                    <p class="name">${name}</p>
-                </div>
-                <div class="body">
-                    <div class="icon">
-                        <i class="fa-solid fa-eye"></i>
+                `;
+            } else {
+                sdgContainer.innerHTML += `
+                <div class="box box_${numOfPosts}" id="boxId_${numOfPosts}" 
+                                            style="
+                                            width:${unitChange}rem;
+                                            height: auto;
+                                            // flex:${unitChange}rem;
+                                            background-color: ${colorCode}">
+                    <div class="overlay" style="background-color: ${colorCode}">
+                      <div class="text_box">
+                        <p class=${truncateOverflow}>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam
+                            </p>
+                        <button class="cta_btn">
+                            our contribution <i class="fa-solid fa-angle-right cta_btn_icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <p class="num">${numOfPosts}</p>
+                        <p class="name">${name}</p>
+                    </div>
+                    <div class="body">
+                        <div class="icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            `;
+                `;
+            }
         })
         var sdgArrReverse = new Array();
         for (let i = (sdgArr2.length - 1); i >= 0; i--) {
@@ -176,7 +208,7 @@
             //     item.style.flex = '1';
             // })
         }
-        // 
+        //
         // const numCols = 3;
         // const colHeights = Array(numCols).fill(0);
         // const container = sdgContainer
