@@ -20,70 +20,125 @@
     <div class="container" id="sdgContainer"></div>
     <script>
         var sdgArr = [{
-            name: 'box1',
-            colorCode: '#3F7E44',
-            icon: '',
-            codeNumber: 13,
-            text: 'climate action',
-            numOfPosts: 5,
-        }, {
-            name: 'box2',
-            colorCode: '#0A97D9',
-            icon: '',
-            codeNumber: 14,
-            text: 'life below water',
-            numOfPosts: 10,
-        }, {
-            name: 'box3',
+            name: 'no poverty',
+            codeNumber: 1,
+            numOfPosts: 24,
             colorCode: '#E5243B',
             icon: '',
-            codeNumber: 1,
-            text: 'no poverty',
-            numOfPosts: 15,
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
         }, {
-            name: 'box4',
-            colorCode: '#56C02B',
+            name: 'zero hunger',
+            codeNumber: 2,
+            numOfPosts: 24,
+            colorCode: '#DDA63A',
             icon: '',
-            codeNumber: 15,
-            text: 'life on land',
-            numOfPosts: 20,
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
         }, {
-            name: 'box4',
-            colorCode: '#56C02B',
+            name: 'good health and well-being',
+            codeNumber: 3,
+            numOfPosts: 19,
+            colorCode: '#4C9F38',
             icon: '',
-            codeNumber: 15,
-            text: 'life on land',
-            numOfPosts: 16,
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
         }, {
-            name: 'box5',
+            name: 'quality education',
+            codeNumber: 4,
+            numOfPosts: 100,
+            colorCode: '#C5192D',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'gender equality',
+            codeNumber: 5,
+            numOfPosts: 71,
+            colorCode: '#FF3A21',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'clean water and sanitation',
+            codeNumber: 6,
+            numOfPosts: 62,
+            colorCode: '#26BDE2',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'affordable and clean energy',
+            codeNumber: 7,
+            numOfPosts: 77,
+            colorCode: '#FCC30B',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'decent work and economic growth',
+            codeNumber: 8,
+            numOfPosts: 39,
+            colorCode: '#A21942',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'industry, innovation and infrastructure',
+            codeNumber: 9,
+            numOfPosts: 25,
             colorCode: '#FD6925',
             icon: '',
-            codeNumber: 9,
-            text: 'industry, innovation and infrastructure',
-            numOfPosts: 25,
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
         }, {
-            name: 'box5_1',
-            colorCode: 'yellow',
+            name: 'reduced inequalities',
+            codeNumber: 10,
+            numOfPosts: 42,
+            colorCode: '#DD1367',
             icon: '',
-            codeNumber: 9.1,
-            text: 'asdcf',
-            numOfPosts: 18,
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
         }, {
-            name: 'box6',
-            colorCode: '#000',
+            name: 'sustainable cities and communities',
+            codeNumber: 11,
+            numOfPosts: 66,
+            colorCode: '#FD9D24',
             icon: '',
-            codeNumber: 0,
-            text: 'industry',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'responsible consumption and production',
+            codeNumber: 12,
             numOfPosts: 37,
-        }, {
-            name: 'box7',
-            colorCode: 'blue',
+            colorCode: '#BF8B2E',
             icon: '',
-            codeNumber: 001,
-            text: 'revolution',
-            numOfPosts: 45,
-        }
-        ];
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'climate change',
+            codeNumber: 13,
+            numOfPosts: 19,
+            colorCode: '#3F7E44',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'life below water',
+            codeNumber: 14,
+            numOfPosts: 22,
+            colorCode: '#0A97D9',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'life on land',
+            codeNumber: 15,
+            numOfPosts: 16,
+            colorCode: '#56C02B',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'peace, justice and strong institutions',
+            codeNumber: 16,
+            numOfPosts: 8,
+            colorCode: '#00689D',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }, {
+            name: 'partnerships for the goals',
+            codeNumber: 17,
+            numOfPosts: 5,
+            colorCode: '#19486A',
+            icon: '',
+            text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius praesentium culpa eum ipsum incidunt corporis et esse hic totam',
+        }];
         const sdgContainer = document.getElementById('sdgContainer');
 
         var sdgArr2 = new Array();
@@ -106,26 +161,31 @@
             sdgArr2[i].colorCode = generateRandomColor();
 
         }
-        let sdgArr2Sorted = [...sdgArr2]
-        // console.log("sdgObj", sdgArr2Sorted);
+        let sdgArr2Sorted = [...sdgArr]
+        console.log("sdgArr", sdgArr);
+        console.log("sdgArr", sdgArr.length);
 
         sdgArr2Sorted.sort(() => Math.random() - 0.5).forEach((obj, i) => {
             // const { name, colorCode, icon, codeNumber, text, numOfPosts } = obj;
-            const { name, numOfPosts, colorCode } = obj;
+            let { name, numOfPosts, colorCode, codeNumber } = obj;
             // console.log("numOfPosts:", numOfPosts);
+
+            // numOfPosts = Math.floor(Math.random() * 50)
+            console.log("sdgArr2Sorted.sort --> numOfPosts", numOfPosts);
+
             // let unitChange = numOfPosts * 10;
             let unitChange = numOfPosts / 2;
 
             let truncateOverflow = numOfPosts <= 25 ? "truncate-overflow" : '';
             // console.log(numOfPosts, "-->", unitChange + "rem");
-            console.log(Math.round(sdgArr2Sorted.length / 2));
-            if (numOfPosts > Math.round(sdgArr2Sorted.length / 2)) {
+            console.log(Math.round(numOfPosts / 2));
+            if (numOfPosts >=8) {
                 sdgContainer.innerHTML += `
                 <div class="box box_${numOfPosts}" id="boxId_${numOfPosts}" 
                                             style="
-                                            width:${unitChange}rem;
-                                            height: auto;
-                                            min-height:${unitChange - 5}rem;
+                                             width:${unitChange * 10}px;
+                                            // height: auto;
+                                            min-height:${unitChange * 10 / 2}px;
                                             flex: 1 0 auto;
                                             background-color: ${colorCode}">
                     <div class="overlay" style="background-color: ${colorCode}">
@@ -139,7 +199,7 @@
                         </div>
                     </div>
                     <div class="header">
-                        <p class="num">${numOfPosts}</p>
+                        <p class="num">${codeNumber}</p>
                         <p class="name">${name}</p>
                     </div>
                     <div class="body">
@@ -168,7 +228,7 @@
                         </div>
                     </div>
                     <div class="header">
-                        <p class="num">${numOfPosts}</p>
+                        <p class="num">${codeNumber}</p>
                         <p class="name">${name}</p>
                     </div>
                     <div class="body">
@@ -185,9 +245,9 @@
             sdgArrReverse.push(sdgArr2[i])
             let elem = sdgArr2[i]
             let elemBox = document.getElementsByClassName(elem.name);
-            console.log("elemBox", elemBox);
+            // console.log("elemBox", elemBox);
         }
-        console.log("sdgArrReverse", sdgArrReverse);
+        // console.log("sdgArrReverse", sdgArrReverse);
 
         // add flex: 20% and decrease percentage by 5% untill last element
         // 
